@@ -1,0 +1,21 @@
+{
+  "name": "node-js-playwright-browserstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pl-test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js",
+    "sample-local-test": "npx browserstack-node-sdk playwright test --config=./playwright.local.config.js",
+    "mobile-test": "npx playwright test tests/test_mobile_fpl_deadline.js --project='chrome@Samsung Galaxy S22:13@browserstack-mobile'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "browserstack-local": "^1.5.1",
+    "browserstack-node-sdk": "latest",
+    "playwright": "1.34.3",
+    "prettier": "2.8.8"
+  }
+}
